@@ -1,5 +1,7 @@
 # DESIGN.md — Calm Infrastructure
 
+**Version:** 20261027 Rev.01 · **Status:** Approved (2026-10-27)
+
 > A neutral, enterprise-grade design system for data, storage, networking and IT-infrastructure products.
 > Monochrome-first, one disciplined blue for interaction, a teal companion for assurance, and warm colors only for alerts.
 

@@ -6,9 +6,13 @@ Thư mục này là **bản chụp nguyên trạng (snapshot)** của các tài 
 |---|---|---|
 | `LAB_Test_system_261013.xlsx` (31 sheet) | Concept và requirement chức năng | Các file ở thư mục này (mục lục bên dưới) |
 | `Software-Quality-Assessment-Checklist_EN_Rev04_20260803.xlsx` (4 sheet, 98 tiêu chí) | Yêu cầu chất lượng / non-functional và điều kiện go-live: hệ thống chỉ được go-live khi 100% tiêu chí Bắt buộc Đạt | [quality-checklist/](quality-checklist/README.md) |
-| `design.md` ("DESIGN.md — Calm Infrastructure") | Quy tắc thiết kế giao diện (màu, chữ, component, icon, layout, responsive) | [design-system/DESIGN.md](design-system/DESIGN.md), bản sao nguyên văn từng byte |
+| `design.md` ("DESIGN.md — Calm Infrastructure") | Quy tắc thiết kế giao diện (màu, chữ, component, icon, layout, responsive). **Đã phê duyệt, phiên bản 20261027 Rev.01** | [design-system/DESIGN_EN_20261027_Rev01.md](design-system/DESIGN_EN_20261027_Rev01.md) |
 
-Lưu ý về `DESIGN.md`: file tự ghi rõ phần nào lấy từ guideline gốc (**[Source]**) và phần nào do người soạn đề xuất thêm (**[Derived]**: component, spacing, elevation, responsive). File không có số phiên bản, trong khi tiêu chí E19 của checklist yêu cầu design system "được phê duyệt, có số phiên bản".
+Lưu ý về design system:
+
+- Nội dung giữ nguyên văn file `design.md` nhận ngày 2026-10-27. Chỉ có hai thay đổi: đổi tên file theo quy tắc `<Tên>_<Ngôn ngữ>_<YYYYMMDD>_Rev<xx>`, và thêm dòng `Version / Status` dưới tiêu đề. Chủ dự án xác nhận ngày 2026-10-27 rằng tài liệu đã được phê duyệt, phiên bản 20261027 Rev.01 (đáp ứng yêu cầu "được phê duyệt, có số phiên bản" của tiêu chí E19).
+- Sự phê duyệt áp dụng cho toàn bộ file, kể cả các phần ghi **[Derived]** (component, spacing, elevation, responsive).
+- Bản sửa đổi sau phải tăng số Rev và đổi tên file tương ứng.
 
 - **File gốc của concept/requirement:** `LAB_Test_system_261013.xlsx` (25 561 204 byte), nhận ngày 2026-10-27.
 - **Ngày chuyển đổi:** 2026-10-27.
