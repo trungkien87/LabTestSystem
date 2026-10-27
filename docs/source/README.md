@@ -1,8 +1,16 @@
-# Tài liệu nguồn: LAB Test system (bản chuyển từ Excel)
+# Tài liệu nguồn: LAB Test system
 
-Thư mục này là **bản chụp nguyên trạng (snapshot)** của file concept/specification `LAB_Test_system_261013.xlsx` (31 sheet), chuyển sang Markdown để agent và team đọc, tìm kiếm và theo dõi lịch sử bằng git.
+Thư mục này là **bản chụp nguyên trạng (snapshot)** của các tài liệu nguồn của dự án, chuyển sang Markdown để agent và team đọc, tìm kiếm và theo dõi lịch sử bằng git.
 
-- **File gốc:** `LAB_Test_system_261013.xlsx` (25 561 204 byte), nhận ngày 2026-10-27.
+| Tài liệu nguồn | Vai trò trong dự án | Vị trí |
+|---|---|---|
+| `LAB_Test_system_261013.xlsx` (31 sheet) | Concept và requirement chức năng | Các file ở thư mục này (mục lục bên dưới) |
+| `Software-Quality-Assessment-Checklist_EN_Rev04_20260803.xlsx` (4 sheet, 98 tiêu chí) | Yêu cầu chất lượng / non-functional và điều kiện go-live: hệ thống chỉ được go-live khi 100% tiêu chí Bắt buộc Đạt | [quality-checklist/](quality-checklist/README.md) |
+| `design.md` ("DESIGN.md — Calm Infrastructure") | Quy tắc thiết kế giao diện (màu, chữ, component, icon, layout, responsive) | [design-system/DESIGN.md](design-system/DESIGN.md), bản sao nguyên văn từng byte |
+
+Lưu ý về `DESIGN.md`: file tự ghi rõ phần nào lấy từ guideline gốc (**[Source]**) và phần nào do người soạn đề xuất thêm (**[Derived]**: component, spacing, elevation, responsive). File không có số phiên bản, trong khi tiêu chí E19 của checklist yêu cầu design system "được phê duyệt, có số phiên bản".
+
+- **File gốc của concept/requirement:** `LAB_Test_system_261013.xlsx` (25 561 204 byte), nhận ngày 2026-10-27.
 - **Ngày chuyển đổi:** 2026-10-27.
 - **Quy ước sử dụng:** không sửa nội dung trong thư mục này. Quyết định, thuật ngữ và spec mới ghi vào `GLOSSARY.md`, `docs/adr/` và spec/issue trên GitHub, rồi trỏ ngược về đây làm nguồn. Nếu file Excel ra bản mới, chuyển đổi lại thành một commit riêng để `git diff` thấy được thay đổi.
 
