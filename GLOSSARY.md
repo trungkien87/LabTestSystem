@@ -76,6 +76,10 @@ _Avoid_: maker (từ này dành cho bên phát triển hệ thống), nhà cung 
 Dòng máy đo của một Equipment brand, ví dụ `VHX-7000`, `NEXIV`, `QV`; thuộc đúng một Equipment brand và một Equipment type.
 _Avoid_: model (đứng một mình), loại máy
 
+**LogFile type**:
+Định dạng file kết quả mà một Equipment model xuất ra: Template, VHX, Laser hoặc Manual Input; mọi Equipment cùng model dùng cùng một LogFile type.
+_Avoid_: Kiểu LogFile, định dạng log
+
 **Equipment**:
 Một máy đo cụ thể, định danh bằng Equipment ID; thuộc đúng một Equipment model và đặt ở đúng một Laboratory Location.
 _Avoid_: Machine, máy đo (đứng một mình), thiết bị
