@@ -15,7 +15,7 @@ Mã hàng thuộc đúng một Item name và đúng một Build, chỉ gồm ch�
 _Avoid_: mã sản phẩm, part number
 
 **Build**:
-Giai đoạn phát triển hoặc sản xuất mà một Item code thuộc về, xác định bằng Build Code và Build Phase, ví dụ `C8.0 (POC)`, `RR/MP (RevA)`.
+Giai đoạn phát triển hoặc sản xuất mà một Item code thuộc về, xác định bằng Build Code và Build Phase và mang một Build Type, ví dụ Build Code `C8.0`, Build Phase `POC` (Proof Of Concept), Build Type NPI.
 _Avoid_: Build Management
 
 **Build Code**:
@@ -23,6 +23,10 @@ Mã của một Build, ví dụ `C8.0`, `C8.1`, `C1.0`, `RR/MP`.
 
 **Build Phase**:
 Tên viết tắt của giai đoạn trong Build, ví dụ `POC`, `EVT`, `PVT`; mỗi Build Phase có một Phase Name đầy đủ, ví dụ POC – Proof Of Concept, EVT – Engineering Validation Test.
+
+**Build Type**:
+Phân loại của một Build là NPI hoặc MP, do người dùng gán cho từng Build; quyết định Item code thuộc Build đó dùng số lượng mẫu NPI hay MP.
+_Avoid_: MASS, Mass Production (đứng một mình)
 
 **Lot**:
 Một lô sản xuất của một Item code, đánh số bằng 5 chữ số, ví dụ `00094`.
