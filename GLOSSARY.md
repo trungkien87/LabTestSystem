@@ -13,5 +13,5 @@ _Avoid_: thứ tự công đoạn, bước, routing step
 ### Đo kiểm
 
 **Laboratory Location**:
-Nơi mẫu được chuyển tới để đo, có đặt thiết bị đo; đặt tên theo quy tắc `Nhà máy-Tầng-Phòng`, ví dụ `F1-Tầng 1-QALab`.
+Phòng vật lý nơi mẫu được chuyển tới để đo, có đặt thiết bị đo; mỗi phòng là một Laboratory Location dù do bộ phận nào sử dụng; đặt tên theo quy tắc `Nhà máy-Tầng-Phòng`, ví dụ `F1-Tầng 1-QALab`.
 _Avoid_: Measurement Location, Location, vị trí, khu vực đo, "Công đoạn lấy kq"
