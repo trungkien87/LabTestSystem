@@ -54,9 +54,9 @@ _Avoid_: Sample type, loại mẫu
 Máy sản xuất, định danh bằng Machine ID, ví dụ `CPRR009`; thuộc đúng một Production Process và một Factory.
 _Avoid_: Machine (đứng một mình), máy; không dùng cho thiết bị đo (xem Equipment)
 
-**Sequence**:
-Số thứ tự 4 chữ số chỉ trình tự của một Production Process trong chuỗi Production Process mà sản phẩm đi qua; là số nguyên dương, tăng dần theo trình tự, ví dụ `0020`, `0030`. Viết tắt được chấp nhận: Seq, SEQ.
-_Avoid_: thứ tự công đoạn, bước, routing step
+**Process Sequence**:
+Số thứ tự 4 chữ số chỉ trình tự của một Production Process trong chuỗi Production Process mà sản phẩm đi qua; là số nguyên dương, tăng dần theo trình tự, ví dụ `0020`, `0030`. Viết tắt được chấp nhận: Process Seq, Process SEQ.
+_Avoid_: Sequence, Seq, SEQ (đứng một mình), thứ tự công đoạn, bước, routing step
 
 ### Đo kiểm
 
