@@ -1,6 +1,6 @@
-# LAB Test system
+# Laboratory Test System
 
-Hệ thống quản lý yêu cầu đo kiểm IPQC giữa sản xuất (PR), kỹ thuật công đoạn (PE) và phòng LAB: khai báo tiêu chuẩn, tạo và nhận yêu cầu đo, đọc kết quả từ thiết bị đo và đánh giá theo tiêu chuẩn.
+Hệ thống quản lý yêu cầu đo kiểm IPQC giữa Production (PR), Process Engineering (PE) và Laboratory (thuộc QA): khai báo tiêu chuẩn, tạo và nhận yêu cầu đo, đọc kết quả từ thiết bị đo và đánh giá theo tiêu chuẩn.
 
 ## Language
 
