@@ -77,7 +77,7 @@ Một máy đo cụ thể, định danh bằng Equipment ID; thuộc đúng mộ
 _Avoid_: Machine, máy đo (đứng một mình), thiết bị
 
 **Laboratory Location**:
-Phòng vật lý nơi mẫu được chuyển tới để đo, có đặt thiết bị đo; mỗi phòng là một Laboratory Location dù do bộ phận nào sử dụng; đặt tên theo quy tắc `Factory – Floor – Room`, ví dụ `F5 – 1st Floor – Etching`.
+Phòng vật lý có đặt Equipment, nơi mẫu được đo; có thể là phòng của Laboratory hoặc một khu vực trong xưởng sản xuất; mỗi phòng là một Laboratory Location dù do bộ phận nào sử dụng. Đặt tên theo quy tắc `Factory – Floor – Room`, ví dụ `F1 – 1st Floor – QA Lab`, `F5 – 1st Floor – Etching`.
 _Avoid_: Measurement Location, Location, vị trí, khu vực đo, "Công đoạn lấy kq", In line
 
 ### Tổ chức
