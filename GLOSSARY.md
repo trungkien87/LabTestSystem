@@ -92,6 +92,24 @@ _Avoid_: Machine, máy đo (đứng một mình), thiết bị
 Phòng vật lý có đặt Equipment, nơi mẫu được đo; có thể là phòng của Laboratory hoặc một khu vực trong xưởng sản xuất; mỗi phòng là một Laboratory Location dù do bộ phận nào sử dụng. Đặt tên theo quy tắc `Factory – Floor – Room`, ví dụ `F1 – 1st Floor – QA Lab`, `F5 – 1st Floor – Etching`.
 _Avoid_: Measurement Location, Location, vị trí, khu vực đo, "Công đoạn lấy kq", In line
 
+### Tiêu chuẩn và đánh giá
+
+**IPQC Content**:
+In-Process Quality Control Content: một nội dung kiểm soát chất lượng trong quá trình sản xuất, tức là chỉ tiêu cần đo, ví dụ "BVH Top".
+_Avoid_: hạng mục đo, chỉ tiêu (đứng một mình), Nội dung IPQC
+
+**Specification Limit**:
+Giới hạn chấp nhận do kỹ thuật hoặc khách hàng đặt, gồm LL (Lower Limit) và UL (Upper Limit); dùng để đánh giá OK/NG.
+_Avoid_: Spec (khi muốn nói giới hạn), tiêu chuẩn, X Spec
+
+**Control Limit**:
+Giới hạn thống kê của quá trình, gồm LCL, Center line và UCL; dùng cho SPC rule, cảnh báo sớm trước khi ra NG.
+_Avoid_: giới hạn cảnh báo, R Spec
+
+**Result File Mapping**:
+Thiết lập cách đọc dữ liệu từ file kết quả (logfile hoặc template) của một Equipment model: vị trí ô, hàng, cột và chiều lấy dữ liệu.
+_Avoid_: Layout, Bố cục IPQC, Cấu hình IPQC
+
 ### Tổ chức
 
 **Department**:
