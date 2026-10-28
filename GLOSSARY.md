@@ -26,7 +26,7 @@ Tên viết tắt của giai đoạn trong Build, ví dụ `POC`, `EVT`, `PVT`; 
 
 **Build Type**:
 Phân loại của một Build là NPI hoặc MP, do người dùng gán cho từng Build; quyết định Item code thuộc Build đó dùng số lượng mẫu NPI hay MP.
-_Avoid_: MASS, Mass Production (đứng một mình)
+_Avoid_: MASS (dùng MP)
 
 **Lot**:
 Một lô sản xuất của một Item code, đánh số bằng 5 chữ số, ví dụ `00094`.
