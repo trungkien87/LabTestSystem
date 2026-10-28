@@ -64,6 +64,18 @@ _Avoid_: Sequence, Seq, SEQ (đứng một mình), thứ tự công đoạn, bư
 Nhóm phân loại thiết bị đo, ví dụ OMM (Optical Measurement Machine).
 _Avoid_: loại máy đo, Machine type
 
+**Equipment brand**:
+Hãng sản xuất thiết bị đo, ví dụ Keyence, Nikon, Mitutoyo.
+_Avoid_: maker (từ này dành cho bên phát triển hệ thống), nhà cung cấp
+
+**Equipment model**:
+Dòng máy đo của một Equipment brand, ví dụ `VHX-7000`, `NEXIV`, `QV`; thuộc đúng một Equipment brand và một Equipment type.
+_Avoid_: model (đứng một mình), loại máy
+
+**Equipment**:
+Một máy đo cụ thể, định danh bằng Equipment ID; thuộc đúng một Equipment model và đặt ở đúng một Laboratory Location.
+_Avoid_: Machine, máy đo (đứng một mình), thiết bị
+
 **Laboratory Location**:
 Phòng vật lý nơi mẫu được chuyển tới để đo, có đặt thiết bị đo; mỗi phòng là một Laboratory Location dù do bộ phận nào sử dụng; đặt tên theo quy tắc `Nhà máy-Tầng-Phòng`, ví dụ `F1-Tầng 1-QALab`.
 _Avoid_: Measurement Location, Location, vị trí, khu vực đo, "Công đoạn lấy kq"
