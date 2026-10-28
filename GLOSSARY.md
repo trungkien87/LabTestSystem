@@ -11,7 +11,7 @@ Mã model sản phẩm, chỉ gồm chữ hoa và số, ví dụ `69DRCT`; một
 _Avoid_: tên sản phẩm, model
 
 **Item code**:
-Mã hàng thuộc đúng một Item name và đúng một Build, chỉ gồm chữ hoa và số, ví dụ `4M002401000B`. 6 ký tự cuối chỉ loại mã: `01000B` Upper/Front process, `02000B` Lower/Back process, `00000B` mã xuất hàng từ SEEV sang MI, `03000B` mã xuất hàng từ SEEV sang SECT.
+Mã hàng thuộc đúng một Item name và đúng một Build, chỉ gồm chữ hoa và số, ví dụ `4M002401000B`. 6 ký tự cuối chỉ loại mã: `01000B` Upper/Front route, `02000B` Lower/Back route, `00000B` mã xuất hàng từ SEEV sang MI, `03000B` mã xuất hàng từ SEEV sang SECT.
 _Avoid_: mã sản phẩm, part number
 
 **Build**:
@@ -38,8 +38,24 @@ _Avoid_: travel ticket, tem lô
 
 ### Sản xuất
 
+**Factory**:
+Nhà máy, tên đầy đủ Factory 1 … Factory 5, viết tắt F1 … F5.
+_Avoid_: xưởng, plant
+
+**Production Process**:
+Một công đoạn sản xuất, ví dụ `UV Laser`, `R/R Copper`; mỗi Production Process có đúng một Sample Form.
+_Avoid_: Stage, công đoạn (đứng một mình), process (đứng một mình)
+
+**Sample Form**:
+Hình thức của mẫu lấy từ một Production Process: sheet, block, panel hoặc piece.
+_Avoid_: Sample type, loại mẫu
+
+**Production Machine**:
+Máy sản xuất, định danh bằng Machine ID, ví dụ `CPRR009`; thuộc đúng một Production Process và một Factory.
+_Avoid_: Machine (đứng một mình), máy; không dùng cho thiết bị đo (xem Equipment)
+
 **Sequence**:
-Số thứ tự 4 chữ số chỉ trình tự của một công đoạn trong quy trình sản xuất; là số nguyên dương, tăng dần theo trình tự, ví dụ `0020`, `0030`. Viết tắt được chấp nhận: Seq, SEQ.
+Số thứ tự 4 chữ số chỉ trình tự của một Production Process trong chuỗi Production Process mà sản phẩm đi qua; là số nguyên dương, tăng dần theo trình tự, ví dụ `0020`, `0030`. Viết tắt được chấp nhận: Seq, SEQ.
 _Avoid_: thứ tự công đoạn, bước, routing step
 
 ### Đo kiểm
