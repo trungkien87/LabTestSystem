@@ -1,6 +1,6 @@
 # Laboratory Test System
 
-Hệ thống quản lý yêu cầu đo kiểm IPQC giữa Production (PR), Process Engineering (PE) và Laboratory (thuộc QA): khai báo tiêu chuẩn, tạo và nhận yêu cầu đo, đọc kết quả từ thiết bị đo và đánh giá theo tiêu chuẩn.
+Hệ thống quản lý yêu cầu đo kiểm IPQC giữa Production (PR), Process Engineering (PE) và Laboratory: khai báo tiêu chuẩn, tạo và nhận yêu cầu đo, đọc kết quả từ thiết bị đo và đánh giá theo tiêu chuẩn.
 
 ## Language
 
@@ -93,3 +93,7 @@ _Avoid_: bộ phận, nhóm
 **Job Level**:
 Cấp bậc của người dùng trong Department: Manager, Engineer, Leader hoặc Operator.
 _Avoid_: Position (dành cho vị trí trên Rack), Role, OP, công nhân
+
+**Laboratory**:
+Phòng thí nghiệm dùng để đo đạc, kiểm thử, thuộc quản lý của Department PR hoặc QA.
+_Avoid_: QA Lab, LAB test, LAB, Laboratary
