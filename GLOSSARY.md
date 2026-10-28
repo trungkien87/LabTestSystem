@@ -12,6 +12,6 @@ _Avoid_: thứ tự công đoạn, bước, routing step
 
 ### Đo kiểm
 
-**Measurement Location**:
-Khu vực đặt thiết bị đo, nơi mẫu được gửi tới để đo; đặt tên theo quy tắc `Nhà máy-Tầng-Phòng`, ví dụ `F1-Tầng 1-QALab`.
-_Avoid_: Location, vị trí, khu vực đo, "Công đoạn lấy kq"
+**Laboratory Location**:
+Nơi mẫu được chuyển tới để đo, có đặt thiết bị đo; đặt tên theo quy tắc `Nhà máy-Tầng-Phòng`, ví dụ `F1-Tầng 1-QALab`.
+_Avoid_: Measurement Location, Location, vị trí, khu vực đo, "Công đoạn lấy kq"
