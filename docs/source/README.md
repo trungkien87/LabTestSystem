@@ -7,6 +7,7 @@ Thư mục này là **bản chụp nguyên trạng (snapshot)** của các tài 
 | `LAB_Test_system_261013.xlsx` (31 sheet) | Concept và requirement chức năng | Các file ở thư mục này (mục lục bên dưới) |
 | `Software-Quality-Assessment-Checklist_EN_Rev04_20260803.xlsx` (4 sheet, 98 tiêu chí) | Yêu cầu chất lượng / non-functional và điều kiện go-live: hệ thống chỉ được go-live khi 100% tiêu chí Bắt buộc Đạt | [quality-checklist/](quality-checklist/README.md) |
 | `design.md` ("DESIGN.md — Calm Infrastructure") | Quy tắc thiết kế giao diện (màu, chữ, component, icon, layout, responsive). **Đã phê duyệt, phiên bản 20261027 Rev.01** | [design-system/DESIGN_EN_20261027_Rev01.md](design-system/DESIGN_EN_20261027_Rev01.md) |
+| `LabTestSystem_KB_VI_20261028_Rev01.zip` và `LabTestSystem_UserGuide_VI_20261028_Rev01.xlsx` | Mô tả bản demo maker đang chạy (as-built), rà soát ngày 2026-10-28. Là tham chiếu, không phải yêu cầu | [maker-demo/](maker-demo/README.md) |
 
 Lưu ý về design system:
 
