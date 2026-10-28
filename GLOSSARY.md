@@ -4,6 +4,38 @@ Hệ thống quản lý yêu cầu đo kiểm IPQC giữa sản xuất (PR), k�
 
 ## Language
 
+### Sản phẩm
+
+**Item name**:
+Mã model sản phẩm, chỉ gồm chữ hoa và số, ví dụ `69DRCT`; một Item name có nhiều Item code.
+_Avoid_: tên sản phẩm, model
+
+**Item code**:
+Mã hàng thuộc đúng một Item name và đúng một Build, chỉ gồm chữ hoa và số, ví dụ `4M002401000B`. 6 ký tự cuối chỉ loại mã: `01000B` Upper/Front process, `02000B` Lower/Back process, `00000B` mã xuất hàng từ SEEV sang MI, `03000B` mã xuất hàng từ SEEV sang SECT.
+_Avoid_: mã sản phẩm, part number
+
+**Build**:
+Giai đoạn phát triển hoặc sản xuất mà một Item code thuộc về, xác định bằng Build Code và Build Phase, ví dụ `C8.0 (POC)`, `RR/MP (RevA)`.
+_Avoid_: Build Management
+
+**Build Code**:
+Mã của một Build, ví dụ `C8.0`, `C8.1`, `C1.0`, `RR/MP`.
+
+**Build Phase**:
+Tên viết tắt của giai đoạn trong Build, ví dụ `POC`, `EVT`, `PVT`; mỗi Build Phase có một Phase Name đầy đủ, ví dụ POC – Proof Of Concept, EVT – Engineering Validation Test.
+
+**Lot**:
+Một lô sản xuất của một Item code, đánh số bằng 5 chữ số, ví dụ `00094`.
+_Avoid_: Lot No, lô
+
+**Indication number**:
+Mã in trên Traveller ticket, gồm Item code và Lot ghép liền, ví dụ `4M002401000B00094`.
+_Avoid_: Indi Number, mã tem lô
+
+**Traveller ticket**:
+Phiếu đi kèm một Lot qua các công đoạn sản xuất, mang Indication number.
+_Avoid_: travel ticket, tem lô
+
 ### Sản xuất
 
 **Sequence**:
