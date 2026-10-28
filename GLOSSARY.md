@@ -79,3 +79,13 @@ _Avoid_: Machine, máy đo (đứng một mình), thiết bị
 **Laboratory Location**:
 Phòng vật lý nơi mẫu được chuyển tới để đo, có đặt thiết bị đo; mỗi phòng là một Laboratory Location dù do bộ phận nào sử dụng; đặt tên theo quy tắc `Nhà máy-Tầng-Phòng`, ví dụ `F1-Tầng 1-QALab`.
 _Avoid_: Measurement Location, Location, vị trí, khu vực đo, "Công đoạn lấy kq"
+
+### Tổ chức
+
+**Department**:
+Phòng ban của người dùng, là một trong bốn: Process Engineering – Phòng Kỹ thuật công đoạn (PE), Production – Phòng Sản xuất (PR), Quality Assurance – Phòng Quản lý chất lượng (QA), Smart Factory – Phòng nhà máy thông minh (SF).
+_Avoid_: bộ phận, nhóm
+
+**Job Level**:
+Cấp bậc của người dùng trong Department: Manager, Engineer, Leader hoặc Operator.
+_Avoid_: Position (dành cho vị trí trên Rack), Role, OP, công nhân
