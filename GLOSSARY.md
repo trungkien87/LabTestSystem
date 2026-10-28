@@ -32,6 +32,10 @@ _Avoid_: MASS (dùng MP)
 Một lô sản xuất của một Item code, đánh số bằng 5 chữ số, ví dụ `00094`.
 _Avoid_: Lot No, lô
 
+**Split lot**:
+Một phần được cắt ra từ một Lot, đánh số bằng số Lot gốc, dấu `-` và 2 chữ số thứ tự, ví dụ `00094-02`.
+_Avoid_: lot cắt, sub-lot, child lot
+
 **Indication number**:
 Mã in trên Traveller ticket, gồm Item code và Lot ghép liền, ví dụ `4M002401000B00094`.
 _Avoid_: Indi Number, mã tem lô
