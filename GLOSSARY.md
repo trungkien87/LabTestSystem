@@ -11,7 +11,7 @@ Mã model sản phẩm, chỉ gồm chữ hoa và số, ví dụ `69DRCT`; một
 _Avoid_: tên sản phẩm, model
 
 **Item code**:
-Mã hàng thuộc đúng một Item name và đúng một Build, chỉ gồm chữ hoa và số, ví dụ `4M002401000B`. 6 ký tự cuối chỉ loại mã: `01000B` Upper/Front route, `02000B` Lower/Back route, `00000B` mã xuất hàng từ SEEV sang MI, `03000B` mã xuất hàng từ SEEV sang SECT.
+Mã hàng thuộc đúng một Item name và đúng một Build, chỉ gồm chữ hoa và số, ví dụ `4M002401000B`. 6 ký tự cuối chỉ loại mã: `01000B` Front route, `02000B` Back route, `00000B` mã xuất hàng từ SEEV sang MI, `03000B` mã xuất hàng từ SEEV sang SECT.
 _Avoid_: mã sản phẩm, part number
 
 **Build**:
@@ -63,8 +63,12 @@ Máy sản xuất, định danh bằng Machine ID, ví dụ `CPRR009`; thuộc �
 _Avoid_: Machine (đứng một mình), máy; không dùng cho thiết bị đo (xem Equipment)
 
 **Process Sequence**:
-Số thứ tự 4 chữ số chỉ trình tự của một Production Process trong chuỗi Production Process mà sản phẩm đi qua; là số nguyên dương, tăng dần theo trình tự, ví dụ `0020`, `0030`. Viết tắt được chấp nhận: Process Seq, Process SEQ.
+Số thứ tự 4 chữ số chỉ trình tự của một Production Process trong một Route; là số nguyên dương, tăng dần theo trình tự, ví dụ `0020`, `0030`. Chỉ duy nhất trong một Route: Front route và Back route của cùng Item name có thể trùng số. Viết tắt được chấp nhận: Process Seq, Process SEQ.
 _Avoid_: Sequence, Seq, SEQ (đứng một mình), thứ tự công đoạn, bước, routing step
+
+**Route**:
+Chuỗi Production Process có thứ tự mà một Item code đi qua, gồm Front route (mã `…01000B`) và Back route (mã `…02000B`); mỗi Item code sản xuất thuộc đúng một Route.
+_Avoid_: Upper route, Lower route, Front process, Back process, process (đứng một mình), routing
 
 ### Đo kiểm
 
