@@ -116,6 +116,10 @@ _Avoid_: Sequence No, Seq No, thứ tự bước
 In-Process Quality Control Content: một nội dung kiểm soát chất lượng trong quá trình sản xuất, tức là chỉ tiêu cần đo, ví dụ "BVH Top"; chỉ định đúng một Equipment type để đo, không chỉ định Equipment cụ thể.
 _Avoid_: hạng mục đo, chỉ tiêu (đứng một mình), Nội dung IPQC
 
+**IPQC Spec**:
+Bộ khai báo đo của một sản phẩm tại một Process Sequence: các IPQC Content cần đo, và với mỗi IPQC Content là Specification Limit, Control Limit cùng các thiết lập lấy mẫu. Có hai biến thể: Common dùng chung cho các Item code của một Item name, Individual chỉ cho một Item code.
+_Avoid_: Spec (đứng một mình), Standard, bộ tiêu chuẩn
+
 **Specification Limit**:
 Giới hạn chấp nhận do kỹ thuật hoặc khách hàng đặt, gồm LL (Lower Limit), UL (Upper Limit) hoặc cả hai, tức có thể một phía hoặc hai phía; dùng để đánh giá OK/NG.
 _Avoid_: Spec (khi muốn nói giới hạn), tiêu chuẩn, X Spec
