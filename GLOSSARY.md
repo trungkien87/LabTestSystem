@@ -11,7 +11,7 @@ Mã model sản phẩm, chỉ gồm chữ hoa và số, ví dụ `69DRCT`; một
 _Avoid_: tên sản phẩm, model
 
 **Item code**:
-Mã hàng thuộc đúng một Item name và đúng một Build, chỉ gồm chữ hoa và số, ví dụ `4M002401000B`. 6 ký tự cuối chỉ loại mã: `01000B` Front route, `02000B` Back route, `00000B` mã xuất hàng từ SEEV sang MI, `03000B` mã xuất hàng từ SEEV sang SECT.
+Mã hàng thuộc đúng một Item name và đúng một Build, chỉ gồm chữ hoa và số; dài 12 ký tự với hàng sản xuất, ví dụ `4M002401000B`, hoặc 7 ký tự với hàng test/prototype, ví dụ `26B0740`. Với hàng sản xuất, 6 ký tự cuối chỉ loại mã: `01000B` Front route, `02000B` Back route, `00000B` mã xuất hàng từ SEEV sang MI, `03000B` mã xuất hàng từ SEEV sang SECT.
 _Avoid_: mã sản phẩm, part number
 
 **Build**:
@@ -39,6 +39,12 @@ _Avoid_: lot cắt, sub-lot, child lot
 **Indication number**:
 Mã in trên Traveller ticket, có hai dạng. Hàng sản xuất: Item code 12 ký tự và Lot (hoặc Split lot) ghép liền, ví dụ `4M002401000B00094`. Hàng test/prototype: Item code 7 ký tự, Revision 1 chữ số, Part No 2 ký tự chữ hoa hoặc số, dấu `-`, rồi Lot (hoặc Split lot), ví dụ `26B07400V2-001-02` là Item code `26B0740`, Revision `0`, Part No `V2`, Split lot `001-02`.
 _Avoid_: Indi Number, mã tem lô
+
+**Revision**:
+Số revision 1 chữ số ở vị trí thứ 8 trong Indication number của hàng test/prototype, ngay sau Item code, ví dụ `0`; không thuộc Item code.
+
+**Part No**:
+Mã 2 ký tự chữ hoa hoặc số ngay sau Revision trong Indication number của hàng test/prototype, ví dụ `V2`; hiện chỉ lưu để truy vết.
 
 **Traveller ticket**:
 Phiếu đi kèm một Lot qua các công đoạn sản xuất, mang Indication number.
