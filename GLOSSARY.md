@@ -65,7 +65,7 @@ Hình thức của mẫu lấy từ một Production Process: sheet, block, pane
 _Avoid_: Sample type, loại mẫu
 
 **Production Machine**:
-Máy sản xuất, định danh bằng Machine ID, ví dụ `CPRR009`; thuộc đúng một Production Process và một Factory.
+Máy sản xuất, định danh bằng Machine ID, ví dụ `CPRR009`; đặt ở đúng một Factory và chạy một hoặc nhiều Production Process.
 _Avoid_: Machine (đứng một mình), máy; không dùng cho thiết bị đo (xem Equipment)
 
 **Process Sequence**:
