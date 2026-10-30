@@ -117,11 +117,11 @@ In-Process Quality Control Content: một nội dung kiểm soát chất lượn
 _Avoid_: hạng mục đo, chỉ tiêu (đứng một mình), Nội dung IPQC
 
 **Specification Limit**:
-Giới hạn chấp nhận do kỹ thuật hoặc khách hàng đặt, gồm LL (Lower Limit) và UL (Upper Limit); dùng để đánh giá OK/NG.
+Giới hạn chấp nhận do kỹ thuật hoặc khách hàng đặt, gồm LL (Lower Limit), UL (Upper Limit) hoặc cả hai, tức có thể một phía hoặc hai phía; dùng để đánh giá OK/NG.
 _Avoid_: Spec (khi muốn nói giới hạn), tiêu chuẩn, X Spec
 
 **Control Limit**:
-Giới hạn thống kê của quá trình, gồm LCL, Center line và UCL; dùng cho SPC rule, cảnh báo sớm trước khi ra NG.
+Giới hạn thống kê của quá trình, gồm LCL, Center line và UCL; khai cho biểu đồ X, biểu đồ R hoặc cả hai; dùng cho SPC rule, cảnh báo sớm trước khi ra NG.
 _Avoid_: giới hạn cảnh báo, R Spec
 
 **Result File Mapping**:
