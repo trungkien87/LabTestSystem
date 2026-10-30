@@ -123,12 +123,16 @@ _Avoid_: Layout, Bố cục IPQC, Cấu hình IPQC
 ### Tổ chức
 
 **Department**:
-Phòng ban của người dùng, là một trong bốn: Process Engineering – Phòng Kỹ thuật công đoạn (PE), Production – Phòng Sản xuất (PR), Quality Assurance – Phòng Quản lý chất lượng (QA), Smart Factory – Phòng nhà máy thông minh (SF).
+Phòng ban của người dùng, là một trong bốn: Process Engineering – Phòng Kỹ thuật công đoạn (PE), Production – Phòng Sản xuất (PR), Quality Assurance – Phòng Quản lý chất lượng (QA), Smart Factory – Phòng nhà máy thông minh (SF). Chỉ ghi nhận người dùng đến từ phòng nào; không quyết định quyền thao tác, quyền do Role quyết định.
 _Avoid_: bộ phận, nhóm
 
 **Job Level**:
 Cấp bậc của người dùng trong Department: Manager, Engineer, Leader hoặc Operator.
-_Avoid_: Position (dành cho vị trí trên Rack), Role, OP, công nhân
+_Avoid_: Position (dành cho vị trí trên Rack), Role (dành cho tập quyền), OP, công nhân
+
+**Role**:
+Tập quyền thao tác trong hệ thống, do quản trị viên tạo và tuỳ biến, rồi gán cho người dùng; quyền của người dùng chỉ do Role quyết định.
+_Avoid_: quyền, nhóm quyền, permission group, Job Level (khi muốn nói Role)
 
 **Laboratory**:
 Phòng thí nghiệm dùng để đo đạc, kiểm thử, thuộc quản lý của Department PR hoặc QA.
