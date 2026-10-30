@@ -33,7 +33,7 @@ Một lô sản xuất của một Item code, đánh số bằng 5 chữ số v�
 _Avoid_: Lot No, lô, lot main, lot gốc (khi muốn nói Lot)
 
 **Split lot**:
-Một phần được cắt ra từ một Lot hoặc từ một Split lot khác, nên một Lot có thể cắt thành nhiều cấp: Lot cắt ra Split lot cấp 1, Split lot cấp 1 cắt ra Split lot cấp 2, và cứ thế. Split lot cấp 1 đánh số bằng số Lot, dấu `-` và 2 chữ số thứ tự, ví dụ `00094-02`, `001-02`.
+Một phần được cắt ra từ một Lot hoặc từ một Split lot khác, nên một Lot có thể cắt thành nhiều cấp: Lot cắt ra Split lot cấp 1, Split lot cấp 1 cắt ra Split lot cấp 2, và cứ thế. Mọi cấp đều đánh số bằng số Lot, dấu `-` và 2 chữ số thứ tự tiếp nối trong cùng Lot, ví dụ `00094-02` cấp 1 cắt ra `00094-05` và `00094-06` cấp 2, nên mã không cho biết Split lot cha.
 _Avoid_: lot cắt, lot cut, sub-lot, child lot
 
 **Indication number**:
