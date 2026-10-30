@@ -127,7 +127,7 @@ Phòng ban của người dùng, là một trong bốn: Process Engineering – 
 _Avoid_: bộ phận, nhóm
 
 **Job Level**:
-Cấp bậc của người dùng trong Department: Manager, Engineer, Leader hoặc Operator.
+Cấp bậc của người dùng trong Department: Manager, Engineer, Leader hoặc Operator. Chỉ là thông tin như Department, không quyết định quyền thao tác.
 _Avoid_: Position (dành cho vị trí trên Rack), Role (dành cho tập quyền), OP, công nhân
 
 **Role**:
