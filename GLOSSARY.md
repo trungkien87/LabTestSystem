@@ -125,11 +125,11 @@ Bộ khai báo đo của một sản phẩm tại một Process Sequence: các I
 _Avoid_: Spec (đứng một mình), Standard, bộ tiêu chuẩn
 
 **Specification Limit**:
-Giới hạn chấp nhận do kỹ thuật hoặc khách hàng đặt, gồm LL (Lower Limit), UL (Upper Limit) hoặc cả hai, tức có thể một phía hoặc hai phía; dùng để đánh giá OK/NG.
+Giới hạn chấp nhận do kỹ thuật hoặc khách hàng đặt, gồm LL (Lower Limit), UL (Upper Limit) hoặc cả hai, tức có thể một phía hoặc hai phía; khai riêng cho Side A và Side B nếu IPQC Content đo cả hai mặt; dùng để đánh giá OK/NG.
 _Avoid_: Spec (khi muốn nói giới hạn), tiêu chuẩn, X Spec
 
 **Control Limit**:
-Giới hạn thống kê của quá trình, gồm LCL, Center line và UCL; khai cho biểu đồ X, biểu đồ R hoặc cả hai; X là trung bình (X̄) mọi giá trị đo của một Request cho một IPQC Content, R là max − min của các giá trị đó; Center line là giá trị trung tâm thống kê, không phải giá trị mục tiêu; dùng cho SPC rule, cảnh báo sớm trước khi ra NG.
+Giới hạn thống kê của quá trình, gồm LCL, Center line và UCL; khai cho biểu đồ X, biểu đồ R hoặc cả hai; X là trung bình (X̄) mọi giá trị đo của một Request cho một IPQC Content, R là max − min của các giá trị đó, tính riêng cho Side A và Side B nếu IPQC Content đo cả hai mặt; khai riêng cho từng Side; Center line là giá trị trung tâm thống kê, không phải giá trị mục tiêu; dùng cho SPC rule, cảnh báo sớm trước khi ra NG.
 _Avoid_: giới hạn cảnh báo, R Spec
 
 **Result File Mapping**:
