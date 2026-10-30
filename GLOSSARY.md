@@ -121,8 +121,24 @@ In-Process Quality Control Content: một nội dung kiểm soát chất lượn
 _Avoid_: hạng mục đo, chỉ tiêu (đứng một mình), Nội dung IPQC
 
 **IPQC Spec**:
-Bộ khai báo đo của một sản phẩm tại một Process Sequence: các IPQC Content cần đo, và với mỗi IPQC Content là Specification Limit, Control Limit cùng các thiết lập lấy mẫu. Có hai biến thể: Common dùng chung cho các Item code của một Item name, Individual chỉ cho một Item code.
+Bộ khai báo đo của một sản phẩm tại một Process Sequence: các IPQC Content cần đo, và với mỗi IPQC Content là Specification Limit, Control Limit, Piece quantity, Measurement points per piece và Side; cùng với Unit của Request. Có hai biến thể: Common dùng chung cho các Item code của một Item name, Individual chỉ cho một Item code.
 _Avoid_: Spec (đứng một mình), Standard, bộ tiêu chuẩn
+
+**Unit**:
+Số mẫu PR mang lên cho một Request, đếm theo Sample Form của Production Process, ví dụ 1 panel; khai trong IPQC Spec.
+_Avoid_: số lượng mẫu (đứng một mình), Qty
+
+**Piece quantity**:
+Số piece đo cho một IPQC Content, có hai giá trị NPI và MP; Build Type của Item code quyết định dùng giá trị nào. Viết tắt được chấp nhận: pcs.
+_Avoid_: Sample size, số mẫu, Qty
+
+**Measurement points per piece**:
+Số điểm hoặc lỗ đo trên một piece cho một IPQC Content, tính cho mỗi Side.
+_Avoid_: số điểm (đứng một mình), point, số lỗ
+
+**Side**:
+Mặt của mẫu được đo, Side A hoặc Side B; bật hoặc tắt riêng cho từng IPQC Content trong IPQC Spec. Mỗi Side là một tập dữ liệu riêng, có Specification Limit, Control Limit, X̄ và R riêng.
+_Avoid_: mặt (đứng một mình), Face
 
 **Specification Limit**:
 Giới hạn chấp nhận do kỹ thuật hoặc khách hàng đặt, gồm LL (Lower Limit), UL (Upper Limit) hoặc cả hai, tức có thể một phía hoặc hai phía; khai riêng cho Side A và Side B nếu IPQC Content đo cả hai mặt; dùng để đánh giá OK/NG.
