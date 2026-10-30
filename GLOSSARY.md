@@ -102,6 +102,14 @@ _Avoid_: Machine, máy đo (đứng một mình), thiết bị
 Phòng vật lý có đặt Equipment, nơi mẫu được đo; có thể là phòng thí nghiệm hoặc một khu vực trong xưởng sản xuất; mỗi phòng là một Laboratory Location dù do bộ phận nào sử dụng. Không có tầng quản lý nào phía trên: mỗi phòng thí nghiệm đúng là một Laboratory Location. Đặt tên theo quy tắc `Factory – Floor – Room`, ví dụ `F1 – 1st Floor – QA Lab`, `F5 – 1st Floor – Etching`.
 _Avoid_: Measurement Location, Location, vị trí, khu vực đo, "Công đoạn lấy kq", In line, Laboratory (khi muốn nói một phòng đo cụ thể), LAB test, LAB, Laboratary
 
+**Measurement Step**:
+Một phép đo trong chuỗi đo tuần tự mà cùng một mẫu lần lượt đi qua, theo thứ tự đã cấu hình cho các IPQC Content.
+_Avoid_: Sequence, Seq (dành cho Process Sequence), route (dành cho Route), bước (đứng một mình), measurement route
+
+**Step No**:
+Số thứ tự của một Measurement Step trong chuỗi đo, bắt đầu từ 1, ví dụ 1, 2, 3.
+_Avoid_: Sequence No, Seq No, thứ tự bước
+
 ### Tiêu chuẩn và đánh giá
 
 **IPQC Content**:
