@@ -99,8 +99,8 @@ Một máy đo cụ thể, định danh bằng Equipment ID; thuộc đúng mộ
 _Avoid_: Machine, máy đo (đứng một mình), thiết bị
 
 **Laboratory Location**:
-Phòng vật lý có đặt Equipment, nơi mẫu được đo; có thể là phòng của Laboratory hoặc một khu vực trong xưởng sản xuất; mỗi phòng là một Laboratory Location dù do bộ phận nào sử dụng. Đặt tên theo quy tắc `Factory – Floor – Room`, ví dụ `F1 – 1st Floor – QA Lab`, `F5 – 1st Floor – Etching`.
-_Avoid_: Measurement Location, Location, vị trí, khu vực đo, "Công đoạn lấy kq", In line
+Phòng vật lý có đặt Equipment, nơi mẫu được đo; có thể là phòng thí nghiệm hoặc một khu vực trong xưởng sản xuất; mỗi phòng là một Laboratory Location dù do bộ phận nào sử dụng. Không có tầng quản lý nào phía trên: mỗi phòng thí nghiệm đúng là một Laboratory Location. Đặt tên theo quy tắc `Factory – Floor – Room`, ví dụ `F1 – 1st Floor – QA Lab`, `F5 – 1st Floor – Etching`.
+_Avoid_: Measurement Location, Location, vị trí, khu vực đo, "Công đoạn lấy kq", In line, Laboratory (khi muốn nói một phòng đo cụ thể), LAB test, LAB, Laboratary
 
 ### Tiêu chuẩn và đánh giá
 
@@ -133,7 +133,3 @@ _Avoid_: Position (dành cho vị trí trên Rack), Role (dành cho tập quyề
 **Role**:
 Tập quyền thao tác trong hệ thống, do quản trị viên tạo và tuỳ biến, rồi gán cho người dùng; quyền của người dùng chỉ do Role quyết định.
 _Avoid_: quyền, nhóm quyền, permission group, Job Level (khi muốn nói Role)
-
-**Laboratory**:
-Phòng thí nghiệm dùng để đo đạc, kiểm thử, thuộc quản lý của Department PR hoặc QA.
-_Avoid_: QA Lab, LAB test, LAB, Laboratary
