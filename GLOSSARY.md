@@ -12,7 +12,7 @@ _Avoid_: tên sản phẩm, model
 
 **Item code**:
 Mã hàng thuộc đúng một Item name và đúng một Build, chỉ gồm chữ hoa và số; dài 12 ký tự với hàng sản xuất, ví dụ `4M002401000B`, hoặc 7 ký tự với hàng test/prototype, ví dụ `26B0740`. Với hàng sản xuất, 6 ký tự cuối chỉ loại mã: `01000B` Front route, `02000B` Back route, `00000B` mã xuất hàng từ SEEV sang MI, `03000B` mã xuất hàng từ SEEV sang SECT.
-_Avoid_: mã sản phẩm, part number, Part No (khi muốn nói Item code)
+_Avoid_: mã sản phẩm, Part No (khi muốn nói Item code)
 
 **Build**:
 Giai đoạn phát triển hoặc sản xuất mà một Item code thuộc về, xác định bằng Build Code và Build Phase và mang một Build Type, ví dụ Build Code `C8.0`, Build Phase `POC` (Proof Of Concept), Build Type NPI.
