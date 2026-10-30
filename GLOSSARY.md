@@ -69,11 +69,11 @@ Máy sản xuất, định danh bằng Machine ID, ví dụ `CPRR009`; đặt �
 _Avoid_: Machine (đứng một mình), máy; không dùng cho thiết bị đo (xem Equipment)
 
 **Process Sequence**:
-Số thứ tự 4 chữ số chỉ trình tự của một Production Process trong một Route; là số nguyên dương, tăng dần theo trình tự, ví dụ `0020`, `0030`. Chỉ duy nhất trong một Route: Front route và Back route của cùng Item name có thể trùng số. Viết tắt được chấp nhận: Process Seq, Process SEQ.
+Số thứ tự 4 chữ số chỉ trình tự của một Production Process trong một Route; từ `0000` đến `9999`, tăng dần theo trình tự, ví dụ `0020`, `0030`. Chỉ duy nhất trong một Route: Front route và Back route của cùng Item name có thể trùng số. Với hàng test/prototype không chia Route, Process Sequence đánh liên tục cho cả chuỗi và duy nhất trong Item code. Viết tắt được chấp nhận: Process Seq, Process SEQ.
 _Avoid_: Sequence, Seq, SEQ (đứng một mình), thứ tự công đoạn, bước, routing step
 
 **Route**:
-Chuỗi Production Process có thứ tự mà một Item code đi qua, gồm Front route (mã `…01000B`) và Back route (mã `…02000B`); mỗi Item code sản xuất thuộc đúng một Route.
+Chuỗi Production Process có thứ tự mà một Item code đi qua, gồm Front route (mã `…01000B`) và Back route (mã `…02000B`); mỗi Item code sản xuất thuộc đúng một Route. Item code hàng test/prototype không chia Route.
 _Avoid_: Upper route, Lower route, Front process, Back process, process (đứng một mình), routing
 
 ### Đo kiểm
