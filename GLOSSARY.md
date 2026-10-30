@@ -103,12 +103,16 @@ Phòng vật lý có đặt Equipment, nơi mẫu được đo; có thể là ph
 _Avoid_: Measurement Location, Location, vị trí, khu vực đo, "Công đoạn lấy kq", In line, Laboratory (khi muốn nói một phòng đo cụ thể), LAB test, LAB, Laboratary
 
 **Measurement Step**:
-Một phép đo trong chuỗi đo tuần tự mà cùng một mẫu lần lượt đi qua; ứng với đúng một IPQC Content. Thứ tự các Measurement Step khai riêng, không nằm trong IPQC Spec.
+Một phép đo trong chuỗi đo tuần tự mà cùng một mẫu lần lượt đi qua; ứng với đúng một IPQC Content. Thứ tự các Measurement Step do Measurement Order quy định.
 _Avoid_: Sequence, Seq (dành cho Process Sequence), route (dành cho Route), bước (đứng một mình), measurement route
 
 **Step No**:
 Số thứ tự của một Measurement Step trong chuỗi đo, bắt đầu từ 1, ví dụ 1, 2, 3.
 _Avoid_: Sequence No, Seq No, thứ tự bước
+
+**Measurement Order**:
+Thứ tự đo các IPQC Content của một IPQC Spec, gán Step No cho từng Measurement Step; mỗi IPQC Spec có đúng một Measurement Order, khai riêng với IPQC Spec và chỉ sắp xếp các IPQC Content đã có trong IPQC Spec đó.
+_Avoid_: Measurement Sequence, measurement route, measurement flow, thứ tự đo (đứng một mình)
 
 ### Tiêu chuẩn và đánh giá
 
