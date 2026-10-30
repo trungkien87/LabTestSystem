@@ -47,7 +47,7 @@ Số revision 1 chữ số ở vị trí thứ 8 trong Indication number của h
 Mã 2 ký tự chữ hoa hoặc số ngay sau Revision trong Indication number của hàng test/prototype, ví dụ `V2`; hiện chỉ lưu để truy vết.
 
 **Traveller ticket**:
-Phiếu đi kèm một Lot qua các công đoạn sản xuất, mang Indication number.
+Phiếu đi kèm một Lot qua các công đoạn sản xuất, in mã vạch Indication number và mã vạch Process Sequence của các Production Process trong Route.
 _Avoid_: Indication sheet, travel ticket, tem lô
 
 ### Sản xuất
