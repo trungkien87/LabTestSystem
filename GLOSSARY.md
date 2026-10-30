@@ -105,7 +105,7 @@ _Avoid_: Measurement Location, Location, vị trí, khu vực đo, "Công đoạ
 ### Tiêu chuẩn và đánh giá
 
 **IPQC Content**:
-In-Process Quality Control Content: một nội dung kiểm soát chất lượng trong quá trình sản xuất, tức là chỉ tiêu cần đo, ví dụ "BVH Top".
+In-Process Quality Control Content: một nội dung kiểm soát chất lượng trong quá trình sản xuất, tức là chỉ tiêu cần đo, ví dụ "BVH Top"; chỉ định đúng một Equipment type để đo, không chỉ định Equipment cụ thể.
 _Avoid_: hạng mục đo, chỉ tiêu (đứng một mình), Nội dung IPQC
 
 **Specification Limit**:
