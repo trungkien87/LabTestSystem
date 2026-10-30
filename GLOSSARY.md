@@ -125,7 +125,7 @@ Giới hạn thống kê của quá trình, gồm LCL, Center line và UCL; dùn
 _Avoid_: giới hạn cảnh báo, R Spec
 
 **Result File Mapping**:
-Thiết lập cách đọc dữ liệu từ file kết quả (logfile hoặc template) của một Equipment model: vị trí ô, hàng, cột và chiều lấy dữ liệu.
+Thiết lập cách đọc dữ liệu từ file kết quả (logfile hoặc template) để lấy giá trị của một IPQC Content trên một Equipment model: vị trí ô, hàng, cột và chiều lấy dữ liệu. Mỗi cặp Equipment model × IPQC Content có đúng một Result File Mapping, dùng chung cho mọi Equipment cùng model ở mọi Laboratory Location.
 _Avoid_: Layout, Bố cục IPQC, Cấu hình IPQC
 
 ### Tổ chức
