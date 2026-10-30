@@ -69,12 +69,12 @@ Máy sản xuất, định danh bằng Machine ID, ví dụ `CPRR009`; đặt �
 _Avoid_: Machine (đứng một mình), máy; không dùng cho thiết bị đo (xem Equipment)
 
 **Process Sequence**:
-Số thứ tự 4 chữ số chỉ trình tự của một Production Process trong một Route; từ `0000` đến `9999`, tăng dần theo trình tự, ví dụ `0020`, `0030`. Chỉ duy nhất trong một Route: Front route và Back route của cùng Item name có thể trùng số. Với Item code không chia Route (mã xuất hàng và hàng test/prototype), Process Sequence đánh liên tục cho cả chuỗi và duy nhất trong Item code, ví dụ `4M002400000B` có `0010`–`0250`. Viết tắt được chấp nhận: Process Seq, Process SEQ.
+Số thứ tự 4 chữ số chỉ trình tự của một Production Process trong một Route; từ `0000` đến `9999`, tăng dần theo trình tự, ví dụ `0020`, `0030`. Chỉ duy nhất trong một Route: các Route khác nhau của cùng Item name có thể trùng số. Với hàng test/prototype không chia Route, Process Sequence đánh liên tục cho cả chuỗi và duy nhất trong Item code. Viết tắt được chấp nhận: Process Seq, Process SEQ.
 _Avoid_: Sequence, Seq, SEQ (đứng một mình), thứ tự công đoạn, bước, routing step
 
 **Route**:
-Chuỗi Production Process có thứ tự mà một Item code đi qua, gồm Front route (mã `…01000B`) và Back route (mã `…02000B`); mỗi Item code `…01000B` hoặc `…02000B` thuộc đúng một Route. Mã xuất hàng (`…00000B`, `…03000B`) và Item code hàng test/prototype không chia Route.
-_Avoid_: Upper route, Lower route, Front process, Back process, process (đứng một mình), routing
+Chuỗi Production Process có thứ tự mà một Item code hàng sản xuất đi qua. Mỗi Item code hàng sản xuất thuộc đúng một Route, xác định theo 6 ký tự cuối: Front route (`01000B`), Back route (`02000B`), MI route (`00000B`, xuất SEEV sang MI), SECT route (`03000B`, xuất SEEV sang SECT). Item code hàng test/prototype không chia Route.
+_Avoid_: Upper route, Lower route, Front process, Back process, Shipping route, process (đứng một mình), routing
 
 ### Đo kiểm
 
@@ -121,7 +121,7 @@ In-Process Quality Control Content: một nội dung kiểm soát chất lượn
 _Avoid_: hạng mục đo, chỉ tiêu (đứng một mình), Nội dung IPQC
 
 **IPQC Spec**:
-Bộ khai báo đo của một sản phẩm tại một Process Sequence: Unit, các IPQC Content cần đo, và với mỗi IPQC Content là Side, Piece quantity, Measurement points per piece, Specification Limit và Control Limit. Có hai biến thể: Common dùng chung cho các Item code của một Item name, Individual chỉ cho một Item code.
+Bộ khai báo đo của một sản phẩm tại một Process Sequence: Unit, các IPQC Content cần đo, và với mỗi IPQC Content là Side, Piece quantity, Measurement points per piece, Specification Limit và Control Limit. Có hai biến thể: Common dùng chung cho các Item code cùng Item name và cùng Route, Individual chỉ cho một Item code.
 _Avoid_: Spec (đứng một mình), Standard, bộ tiêu chuẩn
 
 **Unit**:
