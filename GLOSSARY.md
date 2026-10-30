@@ -30,11 +30,11 @@ _Avoid_: MASS (dùng MP)
 
 **Lot**:
 Một lô sản xuất của một Item code, đánh số bằng 5 chữ số với hàng sản xuất, ví dụ `00094`, hoặc 3 chữ số với hàng test/prototype, ví dụ `001`.
-_Avoid_: Lot No, lô
+_Avoid_: Lot No, lô, lot main, lot gốc (khi muốn nói Lot)
 
 **Split lot**:
-Một phần được cắt ra từ một Lot, đánh số bằng số Lot gốc, dấu `-` và 2 chữ số thứ tự, ví dụ `00094-02`, `001-02`.
-_Avoid_: lot cắt, sub-lot, child lot
+Một phần được cắt ra từ một Lot hoặc từ một Split lot khác, nên một Lot có thể cắt thành nhiều cấp: Lot cắt ra Split lot cấp 1, Split lot cấp 1 cắt ra Split lot cấp 2, và cứ thế. Split lot cấp 1 đánh số bằng số Lot gốc, dấu `-` và 2 chữ số thứ tự, ví dụ `00094-02`, `001-02`.
+_Avoid_: lot cắt, lot cut, sub-lot, child lot
 
 **Indication number**:
 Mã in trên Traveller ticket, có hai dạng. Hàng sản xuất: Item code 12 ký tự và Lot (hoặc Split lot) ghép liền, ví dụ `4M002401000B00094`. Hàng test/prototype: Item code 7 ký tự, Revision 1 chữ số, Part No 2 ký tự chữ hoa hoặc số, dấu `-`, rồi Lot (hoặc Split lot), ví dụ `26B07400V2-001-02` là Item code `26B0740`, Revision `0`, Part No `V2`, Split lot `001-02`.
