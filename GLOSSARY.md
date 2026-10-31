@@ -133,7 +133,7 @@ In-Process Quality Control Content: một nội dung kiểm soát chất lượn
 _Avoid_: hạng mục đo, chỉ tiêu (đứng một mình), Nội dung IPQC
 
 **IPQC Spec**:
-Bộ khai báo đo của một sản phẩm tại một Process Sequence: Unit, các IPQC Content cần đo, và với mỗi IPQC Content là Side, Piece quantity, Measurement points per piece, Specification Limit và Control Limit. Có hai biến thể: Common dùng chung cho các Item code cùng Item name và cùng Route, Individual chỉ cho một Item code.
+Bộ khai báo đo của một sản phẩm tại một Process Sequence: Unit, các IPQC Content cần đo, và với mỗi IPQC Content là Side, Piece quantity, Measurement points per piece, Specification Limit và Control Limit. Có hai biến thể: Common dùng chung cho các Item code cùng Item name và cùng Route, Individual chỉ cho một Item code. Individual là bản sao đầy đủ tách khỏi Common lúc chuyển, nên sửa Common không ảnh hưởng Item code đã Individual. Không có version và không xoá được, chỉ Deactivate.
 _Avoid_: Spec (đứng một mình), Standard, bộ tiêu chuẩn
 
 **Unit**:
