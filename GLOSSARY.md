@@ -61,7 +61,12 @@ Một công đoạn sản xuất, ví dụ `UV Laser`, `R/R Copper`; mỗi Produ
 _Avoid_: Stage, công đoạn (đứng một mình), process (đứng một mình)
 
 **Sample Form**:
-Hình thức của mẫu lấy từ một Production Process: sheet, block, panel hoặc piece.
+Hình thức của mẫu lấy từ một Production Process: Worksheet, block, panel hoặc piece.
+_Avoid_: sheet (dùng Worksheet)
+
+**Sample ID**:
+Mã QR định danh một mẫu vật lý, loại mã theo Sample Form: Worksheet ID (Worksheet), Block ID (block), Panel ID (panel), Flex ID (piece).
+_Avoid_: Piece ID, mã mẫu
 _Avoid_: Sample type, loại mẫu
 
 **Production Machine**:
@@ -79,7 +84,7 @@ _Avoid_: Upper route, Lower route, Front process, Back process, Shipping route, 
 ### Đo kiểm
 
 **Request**:
-Yêu cầu đo IPQC cho một Indication number tại một Process Sequence, gồm các Measurement Step theo Measurement Order; định danh bằng Request No dạng `RYYMMDD_NNNN`, ví dụ `R260710_0001`.
+Yêu cầu đo IPQC cho một Indication number tại một Process Sequence, gồm các Measurement Step, trong đó các Measurement Step dùng chung một mẫu được xếp thứ tự theo Measurement Order; định danh bằng Request No dạng `RYYMMDD_NNNN`, ví dụ `R260710_0001`.
 _Avoid_: Order, Order No, yêu cầu đo (đứng một mình)
 
 **Overdue**:
@@ -111,11 +116,11 @@ Phòng vật lý có đặt Equipment, nơi mẫu được đo; có thể là ph
 _Avoid_: Measurement Location, Location, vị trí, khu vực đo, "Công đoạn lấy kq", In line, Laboratory (khi muốn nói một phòng đo cụ thể), LAB test, LAB, Laboratary
 
 **Measurement Step**:
-Một phép đo trong chuỗi đo tuần tự mà cùng một mẫu lần lượt đi qua; ứng với đúng một IPQC Content. Thứ tự các Measurement Step do Measurement Order quy định.
+Một phép đo của một Request, ứng với đúng một IPQC Content; hoặc độc lập, hoặc nằm trong một Measurement Order khi cùng một mẫu lần lượt đi qua nhiều phép đo.
 _Avoid_: Sequence, Seq (dành cho Process Sequence), route (dành cho Route), bước (đứng một mình), measurement route
 
 **Step No**:
-Số thứ tự của một Measurement Step trong chuỗi đo, bắt đầu từ 1, ví dụ 1, 2, 3.
+Số thứ tự của một Measurement Step trong một Measurement Order, bắt đầu từ 1, ví dụ 1, 2, 3; Measurement Step độc lập không có Step No.
 _Avoid_: Sequence No, Seq No, thứ tự bước
 
 **Measurement Attempt**:
@@ -123,7 +128,7 @@ Một lần đo của một Measurement Step, sinh ra khi file kết quả đư�
 _Avoid_: lần đo (đứng một mình), Retry, Re-measure count
 
 **Measurement Order**:
-Thứ tự đo các IPQC Content của một IPQC Spec, gán Step No cho từng Measurement Step; mỗi IPQC Spec có đúng một Measurement Order, khai riêng với IPQC Spec và chỉ sắp xếp các IPQC Content đã có trong IPQC Spec đó.
+Thứ tự đo một nhóm IPQC Content của một IPQC Spec được đo lần lượt trên cùng một mẫu, gán Step No cho từng Measurement Step; tuỳ chọn: một IPQC Spec có không, một hoặc nhiều Measurement Order, mỗi IPQC Content thuộc tối đa một Measurement Order; khai riêng với IPQC Spec và chỉ sắp xếp các IPQC Content đã có trong IPQC Spec đó.
 _Avoid_: Measurement Sequence, measurement route, measurement flow, thứ tự đo (đứng một mình)
 
 ### Tiêu chuẩn và đánh giá
