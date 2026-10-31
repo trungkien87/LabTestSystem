@@ -119,7 +119,7 @@ Số thứ tự của một Measurement Step trong chuỗi đo, bắt đầu t�
 _Avoid_: Sequence No, Seq No, thứ tự bước
 
 **Measurement Attempt**:
-Một lần đo của một Measurement Step, sinh ra khi file kết quả được đọc hợp lệ; đánh số 1, 2, 3… trong Measurement Step. Judgement của Measurement Step là Judgement của Measurement Attempt mới nhất; các lần trước vẫn được giữ.
+Một lần đo của một Measurement Step, sinh ra khi file kết quả được đọc hợp lệ; đánh số 1, 2, 3… trong Measurement Step. Khi Measurement Step đo xong, Judgement của nó là Judgement của Measurement Attempt cuối cùng; các lần trước vẫn được giữ.
 _Avoid_: lần đo (đứng một mình), Retry, Re-measure count
 
 **Measurement Order**:
@@ -161,7 +161,7 @@ Giới hạn thống kê của quá trình, gồm LCL, Center line và UCL; khai
 _Avoid_: giới hạn cảnh báo, R Spec
 
 **Judgement**:
-Kết luận OK hoặc NG của một Measurement Step so với Specification Limit; Judgement của Request là NG nếu có ít nhất một Measurement Step NG. Không phải trạng thái tiến độ; lần đọc file kết quả bị lỗi không tạo ra Judgement.
+Kết luận OK hoặc NG so với Specification Limit, có ở ba cấp: Measurement Attempt, Measurement Step khi đã đo xong, và Request (NG ngay khi có một Measurement Step NG, OK chỉ khi mọi Measurement Step OK). Không phải trạng thái tiến độ; lần đọc file kết quả bị lỗi không tạo ra Judgement.
 _Avoid_: Judgment, phán định (đứng một mình), Status NG, Error (khi muốn nói Judgement)
 
 **Result File Mapping**:
