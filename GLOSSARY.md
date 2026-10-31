@@ -161,12 +161,34 @@ Giới hạn thống kê của quá trình, gồm LCL, Center line và UCL; khai
 _Avoid_: giới hạn cảnh báo, R Spec
 
 **Judgement**:
-Kết luận OK hoặc NG so với Specification Limit, có ở ba cấp: Measurement Attempt, Measurement Step khi đã đo xong, và Request (NG ngay khi có một Measurement Step NG, OK chỉ khi mọi Measurement Step OK). Không phải trạng thái tiến độ; lần đọc file kết quả bị lỗi không tạo ra Judgement.
+Kết luận OK hoặc NG so với Specification Limit; NG khi có ít nhất một giá trị đo, ở bất kỳ Side nào, nằm ngoài Specification Limit của Side đó. Có ở ba cấp: Measurement Attempt, Measurement Step khi đã đo xong, và Request (NG ngay khi có một Measurement Step NG, OK chỉ khi mọi Measurement Step OK). Không phải trạng thái tiến độ; lần đọc file kết quả bị lỗi không tạo ra Judgement.
 _Avoid_: Judgment, phán định (đứng một mình), Status NG, Error (khi muốn nói Judgement)
 
 **Result File Mapping**:
 Thiết lập cách đọc dữ liệu từ file kết quả (logfile hoặc template) để lấy giá trị của một IPQC Content trên một Equipment model: vị trí ô, hàng, cột và chiều lấy dữ liệu. Mỗi cặp Equipment model × IPQC Content có đúng một Result File Mapping, dùng chung cho mọi Equipment cùng model ở mọi Laboratory Location.
 _Avoid_: Layout, Bố cục IPQC, Cấu hình IPQC
+
+**SPC Violation**:
+Ghi nhận một SPC rule bị vi phạm bởi một Measurement Step đã đo xong, cho một Side, ví dụ X̄ vượt UCL; luôn được ghi khi IPQC Content có Control Limit, dù có sinh Abnormal hay không.
+_Avoid_: SPC NG, NG SPC, cảnh báo SPC, Out of control (khi muốn nói Judgement NG)
+
+### Abnormal
+
+**Abnormal**:
+Một cảnh báo chất lượng phát sinh từ một Measurement Step đã đo xong có Judgement NG hoặc có SPC Violation được bật theo dõi; mỗi Measurement Step có tối đa một Abnormal, được leader xác nhận rồi gửi sang hệ thống Abnormal Report của Plus A để xử lý hàng.
+_Avoid_: Abnormal report (khi muốn nói bản ghi; Abnormal report là file CSV gửi đi), bất thường, cảnh báo NG
+
+**Abnormal reason**:
+Lý do phát sinh của một Abnormal: Spec NG (vượt Specification Limit), một hoặc nhiều SPC rule, hoặc cả hai.
+_Avoid_: Abnormal type, loại Abnormal
+
+**Abnormal Setting**:
+Tập dòng quy tắc quyết định Spec NG, SPC Violation hoặc Measurement Attempt NG nào được bật hay tắt cảnh báo, theo phạm vi Item name, Item code, IPQC Content và Production Machine; mỗi dòng có hiệu lực chỉ sau khi được người thứ hai phê duyệt.
+_Avoid_: Abnormal config, cài đặt cảnh báo, bật tắt Abnormal
+
+**Project Year**:
+Năm của dự án mà một Item name thuộc về, ví dụ 2026; lấy từ hệ thống sản xuất bên ngoài, không phải ngày tạo Item name.
+_Avoid_: Item name Year, Created date (khi muốn nói năm dự án), năm sản phẩm
 
 ### Tổ chức
 
