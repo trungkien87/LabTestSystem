@@ -78,6 +78,14 @@ _Avoid_: Upper route, Lower route, Front process, Back process, Shipping route, 
 
 ### Đo kiểm
 
+**Request**:
+Yêu cầu đo IPQC cho một Indication number tại một Process Sequence, gồm các Measurement Step theo Measurement Order; định danh bằng Request No dạng `RYYMMDD_NNNN`, ví dụ `R260710_0001`.
+_Avoid_: Order, Order No, yêu cầu đo (đứng một mình)
+
+**Overdue**:
+Cờ của một Request đã qua Deadline mà chưa Completed; không phải một trạng thái, Request vẫn giữ trạng thái tiến độ của nó.
+_Avoid_: Delayed, Quá hạn, Trễ hạn (khi dùng như một trạng thái)
+
 **Equipment type**:
 Nhóm phân loại thiết bị đo, ví dụ OMM (Optical Measurement Machine).
 _Avoid_: loại máy đo, Machine type
@@ -147,6 +155,10 @@ _Avoid_: Spec (khi muốn nói giới hạn), tiêu chuẩn, X Spec
 **Control Limit**:
 Giới hạn thống kê của quá trình, gồm LCL, Center line và UCL; khai cho biểu đồ X, biểu đồ R hoặc cả hai; X là trung bình (X̄) mọi giá trị đo của một Request cho một IPQC Content, R là max − min của các giá trị đó, tính riêng cho Side A và Side B nếu IPQC Content đo cả hai mặt; khai riêng cho từng Side; Center line là giá trị trung tâm thống kê, không phải giá trị mục tiêu; dùng cho SPC rule, cảnh báo sớm trước khi ra NG.
 _Avoid_: giới hạn cảnh báo, R Spec
+
+**Judgement**:
+Kết luận OK hoặc NG của một Measurement Step so với Specification Limit; Judgement của Request là NG nếu có ít nhất một Measurement Step NG. Không phải trạng thái tiến độ; lần đọc file kết quả bị lỗi không tạo ra Judgement.
+_Avoid_: Judgment, phán định (đứng một mình), Status NG, Error (khi muốn nói Judgement)
 
 **Result File Mapping**:
 Thiết lập cách đọc dữ liệu từ file kết quả (logfile hoặc template) để lấy giá trị của một IPQC Content trên một Equipment model: vị trí ô, hàng, cột và chiều lấy dữ liệu. Mỗi cặp Equipment model × IPQC Content có đúng một Result File Mapping, dùng chung cho mọi Equipment cùng model ở mọi Laboratory Location.
