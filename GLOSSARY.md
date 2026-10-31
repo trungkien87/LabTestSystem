@@ -118,6 +118,10 @@ _Avoid_: Sequence, Seq (dành cho Process Sequence), route (dành cho Route), b�
 Số thứ tự của một Measurement Step trong chuỗi đo, bắt đầu từ 1, ví dụ 1, 2, 3.
 _Avoid_: Sequence No, Seq No, thứ tự bước
 
+**Measurement Attempt**:
+Một lần đo của một Measurement Step, sinh ra khi file kết quả được đọc hợp lệ; đánh số 1, 2, 3… trong Measurement Step. Judgement của Measurement Step là Judgement của Measurement Attempt mới nhất; các lần trước vẫn được giữ.
+_Avoid_: lần đo (đứng một mình), Retry, Re-measure count
+
 **Measurement Order**:
 Thứ tự đo các IPQC Content của một IPQC Spec, gán Step No cho từng Measurement Step; mỗi IPQC Spec có đúng một Measurement Order, khai riêng với IPQC Spec và chỉ sắp xếp các IPQC Content đã có trong IPQC Spec đó.
 _Avoid_: Measurement Sequence, measurement route, measurement flow, thứ tự đo (đứng một mình)
