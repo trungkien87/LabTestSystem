@@ -87,6 +87,10 @@ _Avoid_: Upper route, Lower route, Front process, Back process, Shipping route, 
 Yêu cầu đo IPQC cho một Indication number tại một Process Sequence, gồm các Measurement Step, trong đó các Measurement Step dùng chung một mẫu được xếp thứ tự theo Measurement Order; định danh bằng Request No dạng `RYYMMDD_NNNN`, ví dụ `R260710_0001`.
 _Avoid_: Order, Order No, yêu cầu đo (đứng một mình)
 
+**Ad-hoc Request**:
+Loại Request được tạo trực tiếp tại Lab, không phải từ line sản xuất, để đo bổ sung hoặc đo theo tiêu chuẩn đặc biệt; không theo IPQC Spec mà người tạo tự chọn IPQC Content, Piece quantity, Side, điều kiện đo và có thể có Specification Limit; Machine ID và Indication number không bắt buộc.
+_Avoid_: Request đo bổ sung, Request đặc biệt, Extra Request
+
 **Deadline**:
 Mốc thời gian cam kết mà một Request phải có kết quả, tính trọn vòng từ phía sản xuất: chuyển mẫu tới Lab, chờ Equipment và đo; để sản xuất biết khi nào ghép mẫu lại với Lot và chuyển Lot sang công đoạn tiếp theo. Đã đặt thì không trôi theo hàng chờ.
 _Avoid_: Thời hạn (khi muốn nói thời gian dự kiến), Estimated completion (khi muốn nói mốc cam kết)
